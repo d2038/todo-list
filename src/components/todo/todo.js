@@ -1,5 +1,5 @@
-const todo = (title, description, dueDate, priority) => {
+// const todo = (title, description, dueDate, priority) => {
+//     return { title, description, dueDate, priority}
+// };
 
-};
-
-export default todo;
+// export default todo;

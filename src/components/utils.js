@@ -1,23 +1,23 @@
-const createElement = (type, classList, text, image) => {
-    const element = document.createElement(type);
+// const createElement = (type, classList, text, image) => {
+//     const element = document.createElement(type);
 
-    if (Array.isArray(classList)) {
-        classList.forEach(className => {
-            element.classList.add(className);
-        });
-    } else if (classList) {
-        element.classList.add(classList);
-    }
+//     if (Array.isArray(classList)) {
+//         classList.forEach(className => {
+//             element.classList.add(className);
+//         });
+//     } else if (classList) {
+//         element.classList.add(classList);
+//     }
 
-    if (text) {
-        element.textContent = text;
-    }
+//     if (text) {
+//         element.textContent = text;
+//     }
 
-    if (image) {
-        element.src = image;
-    }
+//     if (image) {
+//         element.src = image;
+//     }
 
-    return element;
-};
+//     return element;
+// };
 
-export default createElement;
+// export default createElement;
