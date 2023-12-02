@@ -1,25 +1,17 @@
 export default new class Storage {
+    #todoAppData;
+
     constructor() {
-        this.projects = this.retrieveFromLocalStorage('projects') || [];
-        this.todos = this.retrieveFromLocalStorage('todos') || [];
+        this.#todoAppData = this.retrieveFromLocalStorage('todoAppData') || [];
     }
 
-    get projects() {
-        return this._projects;
+    get todoAppData() {
+        return this.#todoAppData;
     }
 
-    set projects(value) {
-        this._projects = value;
-        this.saveToLocalStorage('projects', value);
-    }
-
-    get todos() {
-        return this._todos;
-    }
-
-    set todos(value) {
-        this._todos = value;
-        this.saveToLocalStorage('todos', value);
+    set todoAppData(value) {
+        this.#todoAppData = value;
+        this.saveToLocalStorage('todoAppData', value);
     }
 
     retrieveFromLocalStorage(key) {

@@ -1,7 +1,7 @@
 import './preflight.css';
 import storage from './components/storage/storage';
 
-console.log(storage)
+
 // import project from './components/project/project';
 // import ui from './components/ui/ui';
 // import todo from './components/todo/todo';
