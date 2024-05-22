@@ -1,8 +1,10 @@
+import project from '../project/project';
+
 export default new class Storage {
     #todoAppData;
 
     constructor() {
-        this.#todoAppData = this.retrieveFromLocalStorage('todoAppData') || [];
+        this.#todoAppData = this.retrieveFromLocalStorage('todoAppData') || {projects: [new project('Default')]};
     }
 
     get todoAppData() {

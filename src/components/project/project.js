@@ -1,6 +1,6 @@
-// const project = (title) => {
-//     title = title.trim();
-//     return { title }
-// };
-
-// export default project;
+export default class Project {
+    constructor(title) {
+        this.title = title;
+        this.todoList = [];
+    }
+}
